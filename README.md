@@ -1,14 +1,9 @@
-AngularJS1 "@uirouter" Demo
-===========================
+AngularJS1 "@uirouter" Controller "resolve" Demo
+================================================
 
-Use [@uirouter](https://ui-router.github.io/) to handle routes.
+'resolve'是用来给controller提供可inject的依赖的
 
 ```
 npm install
 npm run demo
 ```
-
-可以访问下列url直接看到不同的页面状态：
-
-- <http://127.0.0.1:8081/#!/page-a>
-- <http://127.0.0.1:8081/#!/page-b>

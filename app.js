@@ -3,18 +3,20 @@ const app = angular.module('app', ['ui.router'])
 app.config(($stateProvider, $urlRouterProvider) => {
 
   $stateProvider.state({
-    name: 'pa',
-    url: '/page-a',
-    templateUrl: './templates/a.html'
+    name: 'user',
+    url: '/user',
+    template: '<h1>Hello, {{name}}!</h1>',
+    controller: function ($scope, userData) {
+      $scope.name = userData.name;
+    },
+    resolve: {
+      userData: () => ({
+        name: 'angular'
+      })
+    }
   });
 
-  $stateProvider.state({
-    name: 'pb',
-    url: '/page-b',
-    templateUrl: './templates/b.html'
-  });
-
-  $urlRouterProvider.otherwise('/page-a');
+  $urlRouterProvider.otherwise('/user');
 
 });
 

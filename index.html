@@ -1,23 +1,12 @@
 <html>
 <head>
-    <style>
-        .active {
-            color: red;
-            font-weight: bold;
-        }
-    </style>
     <script src="./node_modules/angular/angular.js"></script>
     <script src="./node_modules/@uirouter/angularjs/release/angular-ui-router.js"></script>
     <script src="./app.js"></script>
 </head>
 <body ng-app="app">
 <div>
-    <div>
-        Choose:
-        <a ui-sref="pa" ui-sref-active="active">Page A</a>
-        <a ui-sref="pb" ui-sref-active="active">Page B</a>
-    </div>
-    <ui-view></ui-view>
+    <ui-view/>
 </div>
 </body>
 </html>
