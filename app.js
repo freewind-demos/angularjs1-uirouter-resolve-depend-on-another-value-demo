@@ -10,9 +10,10 @@ app.config(($stateProvider, $urlRouterProvider) => {
       $scope.name = userData.name;
     },
     resolve: {
-      userData: () => ({
-        name: 'angular'
-      })
+      userData: (angularName) => ({
+        name: angularName
+      }),
+      angularName: () => 'angular',
     }
   });
 

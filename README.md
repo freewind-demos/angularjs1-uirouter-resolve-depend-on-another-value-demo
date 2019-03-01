@@ -1,7 +1,7 @@
-AngularJS1 "@uirouter" Controller "resolve" Demo
-================================================
+AngularJS1 "@uirouter" "resolve" Depend on Another Value Demo
+=============================================================
 
-'resolve'是用来给controller提供可inject的依赖的
+在uirouter中的`resolve`中，某一个值可以依赖另一个值。
 
 ```
 npm install
