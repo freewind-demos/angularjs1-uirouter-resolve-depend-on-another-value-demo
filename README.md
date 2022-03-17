@@ -5,5 +5,5 @@ AngularJS1 "@uirouter" "resolve" Depend on Another Value Demo
 
 ```
 npm install
-npm run demo
+npm start
 ```

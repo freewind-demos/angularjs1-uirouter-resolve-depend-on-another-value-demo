@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "demo": "http-server . -c-1 -o"
+    "start": "http-server . -c-1 -o"
   },
   "dependencies": {
     "@uirouter/angularjs": "1.0.21",
